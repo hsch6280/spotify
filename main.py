@@ -56,6 +56,8 @@ def get_songs(token, artist_id):
     json_result = json.loads(result.content)["tracks"]
     return json_result
 
+
+
 token = get_token()
 result = search_for_artist(token, "Drake")
 artist_id = result["id"]
